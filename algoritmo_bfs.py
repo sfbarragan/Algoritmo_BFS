@@ -2,9 +2,9 @@
 from queue import Queue
 
 
-class Grafo():
+class Grafo:
     """
-    Clase Grafo, esta clase representara a un grafo juto a sus atributos y funcionalidades,
+    Clase Grafo, esta clase representara a un grafo junto a sus atributos y funcionalidades,
 
      Atributos
     ----------
