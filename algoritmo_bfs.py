@@ -3,10 +3,16 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "4c4672f8",
+   "id": "d41dfbdc",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#Importamos la libreria Queue\n",
+    "from queue import Queue\n",
+    "\n",
+    "class Grafo():\n",
+    "    "
+   ]
   }
  ],
  "metadata": {
