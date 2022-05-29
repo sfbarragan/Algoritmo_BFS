@@ -153,10 +153,10 @@ if __name__ == "__main__":
 
     print(" Caso de Prueba 1")
     grafo_test1 = Grafo(5, dirigido = False) # instancia de la clase `Grafo`
-    grafo_test1.agregar_borde(3, 1) # Se agrega los bordes
-    grafo_test1.agregar_borde(2, 2) # Se agrega los bordes
+    grafo_test1.agregar_borde(0, 1) # Se agrega los bordes
+    grafo_test1.agregar_borde(0, 2) # Se agrega los bordes
+    grafo_test1.agregar_borde(1, 2) # Se agrega los bordes
     grafo_test1.agregar_borde(1, 4) # Se agrega los bordes
-    grafo_test1.agregar_borde(0, 4) # Se agrega los bordes
     grafo_test1.agregar_borde(2, 3) # Se agrega los bordes
 
     grafo_test1.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
@@ -168,11 +168,10 @@ if __name__ == "__main__":
 
     print(" Caso de Prueba 2")
     grafo_test2 = Grafo(3, dirigido = False) # instancia de la clase `Grafo`
-    grafo_test2.agregar_borde(1, 1) # Se agrega los bordes
-    grafo_test2.agregar_borde(2, 2) # Se agrega los bordes
-    grafo_test2.agregar_borde(1, 1) # Se agrega los bordes
+    grafo_test2.agregar_borde(1, 2) # Se agrega los bordes
+    grafo_test2.agregar_borde(0, 2) # Se agrega los bordes
     grafo_test2.agregar_borde(0, 1) # Se agrega los bordes
-    grafo_test2.agregar_borde(2, 0) # Se agrega los bordes
+    
 
     grafo_test2.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
 
@@ -186,8 +185,10 @@ if __name__ == "__main__":
     grafo_test3.agregar_borde(6, 1) # Se agrega los bordes
     grafo_test3.agregar_borde(2, 2) # Se agrega los bordes
     grafo_test3.agregar_borde(3, 4) # Se agrega los bordes
-    grafo_test3.agregar_borde(4, 4) # Se agrega los bordes
+    grafo_test3.agregar_borde(0, 1) # Se agrega los bordes
     grafo_test3.agregar_borde(1, 3) # Se agrega los bordes
+    grafo_test3.agregar_borde(4, 4) # Se agrega los bordes
+    grafo_test3.agregar_borde(5, 3) # Se agrega los bordes
 
     grafo_test3.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
 
@@ -200,7 +201,7 @@ if __name__ == "__main__":
     print(" Caso de Prueba 4")
     grafo_test4 = Grafo(5, dirigido = False) # instancia de la clase `Grafo`
     grafo_test4.agregar_borde(3, 1) # Se agrega los bordes
-    grafo_test4.agregar_borde(1, 3) # Se agrega los bordes
+    grafo_test4.agregar_borde(1, 2) # Se agrega los bordes
     grafo_test4.agregar_borde(4, 1) # Se agrega los bordes
     grafo_test4.agregar_borde(0, 4) # Se agrega los bordes
     grafo_test4.agregar_borde(2, 4) # Se agrega los bordes
@@ -216,7 +217,6 @@ if __name__ == "__main__":
     print(" Caso de Prueba 5")
     grafo_test5 = Grafo(4, dirigido = False) # instancia de la clase `Grafo`
     grafo_test5.agregar_borde(3, 1) # Se agrega los bordes
-    grafo_test5.agregar_borde(2, 2) # Se agrega los bordes
     grafo_test5.agregar_borde(1, 2) # Se agrega los bordes
     grafo_test5.agregar_borde(0, 2) # Se agrega los bordes
     grafo_test5.agregar_borde(2, 3) # Se agrega los bordes
