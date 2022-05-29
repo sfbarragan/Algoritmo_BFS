@@ -2,10 +2,60 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "c4119483",
+   "execution_count": 1,
+   "id": "bd495868",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Help on class Grafo in module __main__:\n",
+      "\n",
+      "class Grafo(builtins.object)\n",
+      " |  Clase Grafo, esta clase representara a un grafo juto a sus atributos y funcionalidades,\n",
+      " |  \n",
+      " |   Atributos\n",
+      " |  ----------\n",
+      " |  m_numero_nodos : int\n",
+      " |      Cantidad de nodos que tendra el grafo.\n",
+      " |  m_nodos : int\n",
+      " |      Rango de nodos sobre los que trabajara el grafo.\n",
+      " |  m_dirigido : boolean\n",
+      " |      Tipo de nodo dirigido o no dirigido.\n",
+      " |  m_lista_adyacencia : diccionario\n",
+      " |      Diccionario que almacena el valor de los nodos\n",
+      " |      \n",
+      " |      \n",
+      " |   Métodos\n",
+      " |  ----------\n",
+      " |  \n",
+      " |  __init__(self, num_de_nodos, dirigido=True)\n",
+      " |      Este metodo funcionara como el constuctor de la clase Grafo(), recibe el Numero de nodos (m_num_nodos),\n",
+      " |      crea el rango de nodos (numero_nodos), determina el tipo de grafo si es dirigido o no dirigido (m_dirigido) y\n",
+      " |      creara el diccionario de la lista de adyacencia.\n",
+      " |  \n",
+      " |  agregar_borde(self, nodo1, nodo2, peso=1)\n",
+      " |      Genera los bordes de la lista de adyacencia agregando el nodo 2 a la lista de adyacencia del nodo 1.\n",
+      " |      \n",
+      " |  Imprimir_lista_adyacencia(self)\n",
+      " |      Imprime el grafo generado en base a la lista de adyacencia.\n",
+      " |      \n",
+      " |  bfs_transversal(self, nodo_de_inicio)\n",
+      " |      Función que imprime el recorrido BFS de un vértice fuente dado. bfs_traversal(int s) \n",
+      " |      recorre los vértices alcanzables desde s.\n",
+      " |  \n",
+      " |  Data descriptors defined here:\n",
+      " |  \n",
+      " |  __dict__\n",
+      " |      dictionary for instance variables (if defined)\n",
+      " |  \n",
+      " |  __weakref__\n",
+      " |      list of weak references to the object (if defined)\n",
+      "\n"
+     ]
+    }
+   ],
    "source": [
     "#Importamos la libreria Queue\n",
     "from queue import Queue\n",
@@ -68,17 +118,22 @@
     "        self.m_dirigido = dirigido\n",
     "        self.m_lista_adyacencia = {nodo: set() for nodo in self.m_nodos}\n",
     "\n",
-    "\n",
-    "help(Grafo)"
+    "        \n",
+    "        "
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9b91de22",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
-  "interpreter": {
-   "hash": "ab65a6a126614c4d8a09c3bb162b3d2e4f4a949753c6f0f735c7c1fe269df83b"
-  },
   "kernelspec": {
-   "display_name": "Python 3.10.2 64-bit",
+   "display_name": "Python 3 (ipykernel)",
    "language": "python",
    "name": "python3"
   },
@@ -92,7 +147,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.10.2"
+   "version": "3.9.7"
   }
  },
  "nbformat": 4,
