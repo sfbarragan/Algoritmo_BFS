@@ -78,3 +78,18 @@ class Grafo():
         self.m_lista_adyacencia[nodo1].add((nodo2, peso))#Agrega el nodo 2 a la lista de adyacencia del nodo 1.
         if not self.m_dirigido:
             self.m_lista_adyacencia[nodo2].add((nodo1, peso))#Agrega el nodo 1 a la lista de adyacencia del nodo 2.
+
+    def Imprimir_lista_adyacencia(self):
+        '''
+        Este método imprime el grafo generado a través de la lista de adyacencia.
+         
+        Parametros
+        ----------
+        Nada
+
+        Retorno
+        -------
+        Nada 
+        '''
+        for llave in self.m_lista_adyacencia.keys(): #recorre la lista de adyacencia
+            print("nodo", llave, ": ", self.m_lista_adyacencia[llave]) #imprime el cada nodo almacenado en la lista de adyacencia.
