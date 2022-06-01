@@ -4,7 +4,7 @@ from queue import Queue
 
 class Grafo:
     """
-    Clase Grafo, esta clase representara a un grafo junto a sus atributos y funcionalidades,
+    Clase Grafo, esta clase representara a un grafo junto a sus atributos y funcionalidades.
 
      Atributos
     ----------
@@ -65,7 +65,7 @@ class Grafo:
 
     def agregar_borde(self, nodo1, nodo2, peso=1):
         """
-        Este método define el borde de la lista de adyacencia.
+        Este método define el borde del grafo.
         Recibe como parametros el nodo1, el nodo2 y el peso cuyo valor por defecto es de 1.
         Posteriormente se agregan a la lista de adyacencia del nodo al que corresponde.
 
@@ -152,78 +152,49 @@ if __name__ == "__main__":
     """
 
     print(" Caso de Prueba 1")
-    grafo_test1 = Grafo(5, dirigido = False) # instancia de la clase `Grafo`
-    grafo_test1.agregar_borde(0, 1) # Se agrega los bordes
-    grafo_test1.agregar_borde(0, 2) # Se agrega los bordes
-    grafo_test1.agregar_borde(1, 2) # Se agrega los bordes
-    grafo_test1.agregar_borde(1, 4) # Se agrega los bordes
-    grafo_test1.agregar_borde(2, 3) # Se agrega los bordes
+    grafo_prueba1 = Grafo(5, dirigido = False) # instancia de la clase Grafo
+    grafo_prueba1.agregar_borde(0, 1) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(0, 2) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(1, 2) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(1, 4) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(2, 3) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
 
-    grafo_test1.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
+    grafo_prueba1.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
  
     print("A continuación se muestra el recorrido primero en anchura a partir del vértice 0)")
     #Imprime toda la lista de colas
-    grafo_test1.bfs_transversal(0)
+    grafo_prueba1.bfs_transversal(0)
     print()
 
     print(" Caso de Prueba 2")
-    grafo_test2 = Grafo(3, dirigido = False) # instancia de la clase `Grafo`
-    grafo_test2.agregar_borde(1, 2) # Se agrega los bordes
-    grafo_test2.agregar_borde(0, 2) # Se agrega los bordes
-    grafo_test2.agregar_borde(0, 1) # Se agrega los bordes
+    grafo_prueba2 = Grafo(3, dirigido = False) # instancia de la clase `Grafo`
+    grafo_prueba2.agregar_borde(1, 2) # Se agrega los bordes
+    grafo_prueba2.agregar_borde(0, 2) # Se agrega los bordes
+    grafo_prueba2.agregar_borde(0, 1) # Se agrega los bordes
     
 
-    grafo_test2.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
+    grafo_prueba2.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
 
     print("A continuación se muestra el recorrido primero en anchura a partir del vértice 0)")
     #Imprime toda la lista de colas
-    grafo_test2.bfs_transversal(0)
+    grafo_prueba2.bfs_transversal(0)
     print()
 
     print(" Caso de Prueba 3")
-    grafo_test3 = Grafo(7, dirigido = False) # instancia de la clase `Grafo`
-    grafo_test3.agregar_borde(6, 1) # Se agrega los bordes
-    grafo_test3.agregar_borde(2, 2) # Se agrega los bordes
-    grafo_test3.agregar_borde(3, 4) # Se agrega los bordes
-    grafo_test3.agregar_borde(0, 1) # Se agrega los bordes
-    grafo_test3.agregar_borde(1, 3) # Se agrega los bordes
-    grafo_test3.agregar_borde(4, 4) # Se agrega los bordes
-    grafo_test3.agregar_borde(5, 3) # Se agrega los bordes
+    grafo_prueba3 = Grafo(7, dirigido = False) # instancia de la clase `Grafo`
+    grafo_prueba3.agregar_borde(6, 1) # Se agrega los bordes
+    grafo_prueba3.agregar_borde(2, 2) # Se agrega los bordes
+    grafo_prueba3.agregar_borde(3, 4) # Se agrega los bordes
+    grafo_prueba3.agregar_borde(0, 1) # Se agrega los bordes
+    grafo_prueba3.agregar_borde(1, 3) # Se agrega los bordes
+    grafo_prueba3.agregar_borde(4, 4) # Se agrega los bordes
+    grafo_prueba3.agregar_borde(5, 3) # Se agrega los bordes
 
-    grafo_test3.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
-
-    print("A continuación se muestra el recorrido primero en anchura a partir del vértice 0)")
-    #Imprime toda la lista de colas
-    grafo_test3.bfs_transversal(0)
-    print()
-
-
-    print(" Caso de Prueba 4")
-    grafo_test4 = Grafo(5, dirigido = False) # instancia de la clase `Grafo`
-    grafo_test4.agregar_borde(3, 1) # Se agrega los bordes
-    grafo_test4.agregar_borde(1, 2) # Se agrega los bordes
-    grafo_test4.agregar_borde(4, 1) # Se agrega los bordes
-    grafo_test4.agregar_borde(0, 4) # Se agrega los bordes
-    grafo_test4.agregar_borde(2, 4) # Se agrega los bordes
-
-    grafo_test4.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
+    grafo_prueba3.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
 
     print("A continuación se muestra el recorrido primero en anchura a partir del vértice 0)")
     #Imprime toda la lista de colas
-    grafo_test4.bfs_transversal(0)
+    grafo_prueba3.bfs_transversal(0)
     print()
 
 
-    print(" Caso de Prueba 5")
-    grafo_test5 = Grafo(4, dirigido = False) # instancia de la clase `Grafo`
-    grafo_test5.agregar_borde(3, 1) # Se agrega los bordes
-    grafo_test5.agregar_borde(1, 2) # Se agrega los bordes
-    grafo_test5.agregar_borde(0, 2) # Se agrega los bordes
-    grafo_test5.agregar_borde(2, 3) # Se agrega los bordes
-
-    grafo_test5.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
-
-    print("A continuación se muestra el recorrido primero en anchura a partir del vértice 0)")
-    #Imprime toda la lista de colas
-    grafo_test5.bfs_transversal(0)
-    print()
