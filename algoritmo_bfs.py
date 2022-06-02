@@ -194,7 +194,7 @@ if __name__ == "__main__":
 
     grafo_prueba3.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
 
-    print("A continuación se muestra el recorrido primero en anchura a partir del vértice 0)")
+    print("A continuación se muestra el recorrido primero en anchura a partir del vértice 1)")
     #Imprime toda la lista de colas
     grafo_prueba3.bfs_transversal(1)
     print()
