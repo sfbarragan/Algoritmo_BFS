@@ -153,12 +153,13 @@ if __name__ == "__main__":
 
     print(" Caso de Prueba 1")
     grafo_prueba1 = Grafo(5, dirigido = False) # instancia de la clase Grafo
-    grafo_prueba1.agregar_borde(0, 1) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
-    grafo_prueba1.agregar_borde(0, 2) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
-    grafo_prueba1.agregar_borde(1, 2) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
-    grafo_prueba1.agregar_borde(1, 4) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
-    grafo_prueba1.agregar_borde(2, 3) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(0, 1,3) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(0, 2,2) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(1, 2,1) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(1, 4,3) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
+    grafo_prueba1.agregar_borde(2, 3,1) #  Se agrega los bordes del grafo con valor peso = 1 por defecto
 
+    
     grafo_prueba1.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
  
     print("A continuación se muestra el recorrido primero en anchura a partir del vértice 0)")
