@@ -168,10 +168,11 @@ if __name__ == "__main__":
     print()
 
     print(" Caso de Prueba 2")
-    grafo_prueba2 = Grafo(3, dirigido = False) # instancia de la clase `Grafo`
+    grafo_prueba2 = Grafo(4, dirigido = False) # instancia de la clase `Grafo`
     grafo_prueba2.agregar_borde(1, 2) # Se agrega los bordes
     grafo_prueba2.agregar_borde(0, 2) # Se agrega los bordes
     grafo_prueba2.agregar_borde(0, 1) # Se agrega los bordes
+    grafo_prueba2.agregar_borde(1, 3) # Se agrega los bordes
     
 
     grafo_prueba2.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
@@ -184,18 +185,18 @@ if __name__ == "__main__":
     print(" Caso de Prueba 3")
     grafo_prueba3 = Grafo(7, dirigido = False) # instancia de la clase `Grafo`
     grafo_prueba3.agregar_borde(6, 1) # Se agrega los bordes
-    grafo_prueba3.agregar_borde(2, 2) # Se agrega los bordes
+    grafo_prueba3.agregar_borde(2, 1) # Se agrega los bordes
     grafo_prueba3.agregar_borde(3, 4) # Se agrega los bordes
     grafo_prueba3.agregar_borde(0, 1) # Se agrega los bordes
     grafo_prueba3.agregar_borde(1, 3) # Se agrega los bordes
-    grafo_prueba3.agregar_borde(4, 4) # Se agrega los bordes
+    grafo_prueba3.agregar_borde(4, 2) # Se agrega los bordes
     grafo_prueba3.agregar_borde(5, 3) # Se agrega los bordes
 
     grafo_prueba3.Imprimir_lista_adyacencia() #Se imprime la lista de adyacencia
 
     print("A continuación se muestra el recorrido primero en anchura a partir del vértice 0)")
     #Imprime toda la lista de colas
-    grafo_prueba3.bfs_transversal(0)
+    grafo_prueba3.bfs_transversal(1)
     print()
 
 
